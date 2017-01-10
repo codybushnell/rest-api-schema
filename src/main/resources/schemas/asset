@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+    "attributes": {
+        "type": "object",
+            "properties": {
+            "temperature": {
+                "type": "number"
+            },
+            "humidity": {
+                "type": "number"
+            }
+        },
+        "required": [
+            "temperature",
+            "humidity"
+        ]
+    },
+    "name": {
+        "type": "string"
+    },
+    "type": {
+        "type": "string"
+    }
+},
+    "required": [
+    "attributes",
+    "name",
+    "type"
+]
+}
