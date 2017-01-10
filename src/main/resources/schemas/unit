@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Name": {
+      "type": "string"
+    },
+    "Site": {
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Latitude": {
+          "type": "integer"
+        },
+        "Longitude": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Name",
+        "Latitude",
+        "Longitude"
+      ]
+    },
+    "Status": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Datetime": {
+            "type": "string"
+          },
+          "Power %": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "Datetime",
+          "Power %"
+        ]
+      }
+    }
+  },
+  "required": [
+    "Name",
+    "Site",
+    "Status"
+  ]
+}
